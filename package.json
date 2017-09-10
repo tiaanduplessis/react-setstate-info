@@ -1,0 +1,40 @@
+{
+  "name": "react-setstate-info",
+  "version": "1.0.0",
+  "description": "Get better info about setState calls in React/React Native",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/react-setstate-info",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/react-setstate-info",
+  "bugs": "https://github.com/tiaanduplessis/react-setstate-info",
+  "main": "dist/react-setstate-info.js",
+  "browser": "dist/react-setstate-info.js",
+  "module": "dist/react-setstate-info.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier-standard 'src/**/*.js'",
+    "build": "bili --format es --format umd --compress",
+    "start": "npm run test",
+    "precommit": "npm test",
+    "prepublish": "npm run build",
+    "pretest": "npm run format"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [
+      ["env"]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^21.0.2",
+    "husky": "^0.14.3",
+    "babel-preset-env": "^1.6.0",
+    "bili": "^0.18.1",
+    "prettier-standard": "^6.0.0"
+  }
+}
