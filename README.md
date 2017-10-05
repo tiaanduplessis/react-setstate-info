@@ -55,6 +55,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-setstate-info.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install react-setstate-info
 # OR
